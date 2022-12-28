@@ -10,5 +10,6 @@ public interface WeatherApiClient {
 //http://api.weatherstack.com/current?access_key=98ab4af7996448a0d8403a657ef3bb32&query=New York
 
     @GetMapping("/current")
-    WeatherDTO getCurrentStatus(@RequestParam(value = "access_key") String key, @RequestParam (value = "query") String city );
+    WeatherDTO getCurrentStatus(@RequestParam(value = "access_key") String key,
+                                @RequestParam (value = "query") String city );
 }
